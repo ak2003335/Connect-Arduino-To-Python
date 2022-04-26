@@ -1,0 +1,25 @@
+Arduino Led Blinking code:
+
+int a=1;
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  pinMode(a,OUTPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(a,1);
+  Serial.println("1");
+  delay(1000);
+  digitalWrite(a,0);
+  Serial.println("0");
+  delay(1000);
+}
+
+
+Python Code:
+import  serial
+ser=serial.Serial('COM7',115200)
+print(ser.readline()
